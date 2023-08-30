@@ -1,0 +1,53 @@
+.conteudo-tudo-publi{
+    width: 40%;
+    height: 420px;
+    position: fixed;
+    left: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
+    padding: 0px 15px 15px 15px;
+}
+.conteudo-titulo-publi{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.conteudo-nome-publi{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.conteudo-nome-publi img{
+    width: 10%;
+    height: 55%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text-desc{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+#descricao{
+    width: 100%;
+    height: 150px;
+    border: none;
+    font-size: 24px;
+    outline: 0px;
+}
+input[type='file'] {
+    display: none
+}
+label {
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    padding: 6px 20px
+  }

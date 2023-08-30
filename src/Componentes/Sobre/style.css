@@ -1,0 +1,36 @@
+.sobre{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 90px;
+    background-color: #fff;
+    justify-content: space-around;
+    text-align: justify;
+    display: flex;
+    z-index: 1;
+}
+.sobre h1{
+    text-align: center;
+    color: #CC5F1A;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.conteudoSobre{
+    height: 500px;
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.conteudoSobre p{
+    font-size: 22px;
+}
+.imgSobre{
+    width: 50%;
+    height: 500px;
+}
+.imgSobre img{
+    padding-left: 45px;
+    padding-top: 20px;
+    width: 100%; 
+    height: 500px;
+}

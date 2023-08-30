@@ -1,0 +1,30 @@
+.navVertical{
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    left: 1%;
+    top: 12%;
+    z-index: 2;
+}
+.iconeNavVertical{
+    text-align: justify;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #808080;
+    display: block;
+    transition: 0.2s;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.iconeNavVertical:hover{
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+.iconeNavVertical:last-child{
+    margin-bottom: 0px;
+}
+#iconePageD{
+    color: #CC5F1A
+}

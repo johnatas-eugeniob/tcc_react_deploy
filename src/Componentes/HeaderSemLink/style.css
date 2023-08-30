@@ -1,0 +1,65 @@
+.bgSection{
+    background-image: linear-gradient(to left, #5de0e6, #004aad);
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 3;
+}
+@media screen and(max-height: 450px){
+    .menuOculto{padding-top: 15px;}
+    .menuOculto a{font-size: 18px;}
+}
+section{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 2px 12px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    padding-left: 10px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    transition: margin-left 0.5s;
+}
+#isologo{
+  position: relative;
+  left: 20px;
+  color: #fff;
+  margin-right: 30px;
+}
+.nav-perfil{
+    position: relative;
+    left: 55%;
+}
+.nav-perfil img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.nav-item-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+}
+.nav-item-link a{
+    color: #fff;
+}
+.item-sino{
+    font-size: 36px;
+    transition: 0.3s;
+}
+.item-sino:hover{
+    color: #056e73;
+}
+/*@media (max-width: 1366px){
+    .nav-item{
+        left: 500px;
+    }
+}*/

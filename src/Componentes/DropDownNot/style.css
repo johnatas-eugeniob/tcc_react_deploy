@@ -1,0 +1,60 @@
+.dropDown{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 10%;
+    right: 20%;
+    overflow-x:hidden;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    background:#EFECFF;;
+    box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 50px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 5px;
+    padding: 40px 0px 0px 0px;
+}
+.dropDown a{
+    text-decoration: none;
+}
+.dropDown a:first-child{
+    border: none;
+}
+.not-container p{
+    font-size: 18px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    border-bottom: 1.5px solid black;
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin: 0px 15px 10px 15px;
+    padding-bottom: 5px;
+}
+.not-container p:hover{
+    background-color: #fff000;
+}
+.btnFecharDrop{
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    z-index: 11;
+    right: 25px;
+    font-size: 50px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+.btnFecharDrop:hover{
+    color: #ff0000;
+}
+.not-container img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 10px;
+}

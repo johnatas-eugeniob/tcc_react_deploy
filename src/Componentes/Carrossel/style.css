@@ -1,0 +1,22 @@
+.carrosel{
+    width: 100%;
+    height: 580px;
+    position: relative;
+    top: 80px;
+    border-bottom: solid 2px black;
+    box-shadow: 0 10px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+.slide-item{
+    width: 100%;
+    height: 578px;
+    border: 5px;
+    object-fit: cover;
+}
+/*.carroselTxt{
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    top: 500px;  
+    font-size: 34px;
+}*/

@@ -1,0 +1,14 @@
+.parceiros{
+    width: 100%;
+    height: 530px;
+    position: relative;
+    top: 90px;
+    border-top: solid 2px #CC5F1A;
+    background-color: #fff;
+    text-align: center;
+}
+.parceiros h1{
+    color: #CC5F1A;
+    font-size: 60px;
+    margin-bottom: 15px;
+}

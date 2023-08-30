@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+body{
+    background-image: linear-gradient(to right, #5de0e6, #004aad);
+    height: 100vh;
+}
+.tudo{
+    width: 100%;
+    /*height: 100vh;*/
+    background-color: #EFECFF;
+    display: flex;
+    justify-content: space-arround;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    top: 70px;
+}

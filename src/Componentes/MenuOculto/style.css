@@ -1,0 +1,45 @@
+.menuOculto{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #808080;
+    overflow-x:hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+}
+.menuOculto a{
+    text-align: center;
+    padding: 20px 8px 20px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    background-color: #a1a0a0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.menuOculto a:first-child{
+    border: none;
+}
+.menuOculto a:hover{
+    color: #5de0e6;
+}
+.btnFechar{
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+.btnFechar:hover{
+    color: #ff0000;
+}

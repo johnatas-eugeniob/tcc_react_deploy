@@ -1,0 +1,57 @@
+.seletor{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 90px;
+}
+.desaparecidos{
+    width: 50%;
+    height: 100%;
+    background-image: url(../../img/img2.jpg);
+    border-top: #CC5F1A 2px solid;
+    border-bottom: #CC5F1A 2px solid;
+    z-index: 2;
+}
+.sitAjuda{
+    width: 50%;
+    height: 100%;
+    background-image: url(../../img/img3.jpg);
+    border-top: #CC5F1A 2px solid;
+    border-bottom: #CC5F1A 2px solid;
+    z-index: 2;
+}
+.blurSeletor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 92, 0.672);
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    padding: 20px 50px 20px 50px;
+}
+.textSeletor{
+    text-align: center;
+}
+.textSeletorLink{
+    text-decoration: none;
+    color: #fff;
+}
+.textSeletor button{
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    background-color: #CC5F1A;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.textSeletor button:hover{
+    background-color: #f46105;
+}

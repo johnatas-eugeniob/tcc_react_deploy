@@ -1,0 +1,17 @@
+.conteudoTudo{
+    width: 69%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 30%;
+    background-color: #fff;
+    border-top: #808080 solid 1px;
+    border-right: #808080 solid 1px;
+    border-bottom: #808080 solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba( 31, 38, 135, 0.37 );
+}
+#iconePageStAjuda{
+    color: #CC5F1A;
+}
