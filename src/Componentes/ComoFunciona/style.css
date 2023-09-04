@@ -61,3 +61,32 @@
 .seta{
     font-size: 44px;
 }
+@media (max-width: 768px) {
+    .comoFunciona{
+        width: 100%;
+        height: 1150px;
+        position: relative;
+        top: 90px;
+        background-image: linear-gradient(to right,#cdffd8, #94b9ff);
+        justify-content: space-around;
+        text-align: justify;
+        display: flex;
+    }
+    .iconesComoFunciona{
+        width: 90%;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #remove-set{
+        display: none;
+    }
+    .terceiraEtapa{
+        width: 100px;
+        height: 100px;
+    }
+    .quartaEtapa{
+        width: 200px;
+        height: 100px;
+    }
+  }
