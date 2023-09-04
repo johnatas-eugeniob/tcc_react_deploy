@@ -55,3 +55,26 @@
 .textSeletor button:hover{
     background-color: #f46105;
 }
+@media(max-width: 780px){
+    .seletor{
+        width: 100%;
+        height: 400px;
+        display: initial;
+        position: relative;
+        top: 90px;
+    }
+    .desaparecidos{
+        width: 100%;
+        height: 100%;
+        border-top: #CC5F1A 2px solid;
+        border-bottom: #CC5F1A 2px solid;
+        z-index: -5;
+    }
+    .sitAjuda{
+        width: 100%;
+        height: 100%;
+        border-top: #CC5F1A 2px solid;
+        border-bottom: #CC5F1A 2px solid;
+        z-index: -5;
+    }
+}
