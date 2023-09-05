@@ -21,7 +21,7 @@ function ComoFunciona(){
                         </center>
                     </div>
 
-                    <AiOutlineArrowRight className='seta' id='remove-set'/>
+                    <AiOutlineArrowRight className='seta'/>
 
                     <div className="segundaEtapa">
                         <center>
@@ -31,7 +31,7 @@ function ComoFunciona(){
                         </center>
                     </div>
 
-                    <AiOutlineArrowRight className='seta' id='remove-set'/>
+                    <AiOutlineArrowRight className='seta'/>
 
                     <div className="terceiraEtapa">
                         <center>
@@ -41,7 +41,7 @@ function ComoFunciona(){
                         </center>
                     </div>
 
-                    <AiOutlineArrowRight className='seta' id='remove-set'/>
+                    <AiOutlineArrowRight className='seta'/>
 
                     <div className="quartaEtapa">
                         <center>
