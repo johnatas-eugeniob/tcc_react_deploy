@@ -43,3 +43,27 @@
 .icone-footer:hover{
     font-size: 54px;
 }
+@media(max-width: 780px){
+    .rodapeMenu{
+        height: 50%;
+        width: 100%;
+        display: block;
+        justify-content: none;
+        padding-left: 5%;
+        padding-right: 0%;
+    }
+    .rodapeMenu a{
+        font-size: 20px;
+        transition: 0.5s;
+        color: #fff;
+        position: relative;
+    }
+    .rodapeContato{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

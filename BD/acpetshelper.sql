@@ -1,6 +1,6 @@
-DROP DATABASE if EXISTS arcanine;
-CREATE DATABASE arcanine;
-USE arcanine;
+DROP DATABASE if EXISTS ac_pets_helper;
+CREATE DATABASE ac_pets_helper;
+USE ac_pets_helper;
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";  
 
  	

@@ -60,16 +60,26 @@
     text-decoration: none;
     color: #CC5F1A;
 }
-.login-form-botao{
+.botao-login{
     background-color: #CC5F1A;
     cursor: pointer;
     color: #fff;
-    width: 50%;
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px 0px 5px 0px;
+    font-size: 17px;
+    outline: 0px;
     transition: 0.4s;
 }
-.login-form-botao:hover{
+.botao-login:hover{
     background-color: #f46105;
     font-size: 18px;
+}
+.register-p{
+    color: rgb(181, 181, 181);
 }
 .container-form-logo{
     width: 35%;

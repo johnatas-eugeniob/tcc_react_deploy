@@ -13,14 +13,14 @@ function LoginForm() {
                     </div>
                     <div className='login-form'>
                         <form action="" method="post">
-                            <p className='input-label'>DIGITE SEU EMAIL OU NUMERO DE TELEFONE</p>
+                            <p className='input-label'>DIGITE SEU EMAIL</p>
                             <input name="email" type="text" />
                             <br/><br/><br/>
                             <p className='input-label'>DIGITE SUA SENHA</p>
                             <input name="senha" type="password" />
-                            <Link to="">Esqueceu a senha?</Link>
-                            <input type="submit" value="Entre" className="login-form-botao" />
-                            <input type="button" value="Cadastre-se" className="login-form-botao" />
+                            <Link to="">Esqueceu sua senha?</Link><br />
+                            <button className="botao-login">Enviar</button>
+                            <p className='register-p'>Não tem uma conta? <Link to="">Cadastre-se</Link></p>
                         </form>
                     </div>
                 </div>

@@ -18,11 +18,11 @@ function Seletor() {
             <div className="sitAjuda">
                 <div className="blurSeletor">
                     <div className="textSeletor">
-                        <a href="Pagina_St_Ajuda.html" className='textSeletorLink'>
+                        <Link to='/stajuda' className='textSeletorLink'>
                             <h1>Precisando de Ajuda</h1>
                             <p>Lorem ipsum dolor sit amet. Et natus necessitatibus aut eligendi eveniet
                                 At laborum enim quo obcaecati amet eos nihil consectetur At sint earum. </p>
-                            <button>Acessar</button></a>
+                            <button>Acessar</button></Link>
                     </div><a name="comoFunciona"></a>
                 </div>
             </div>

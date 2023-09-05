@@ -49,8 +49,8 @@ section{
     color: #056e73;
     font-size: 22px;
 }
-/*@media (max-width: 1366px){
-    .nav-item{
-        left: 500px;
+@media(max-width: 780px){
+    .nav-item a{
+        display: none;
     }
-}*/
+}

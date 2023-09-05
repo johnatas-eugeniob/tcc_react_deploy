@@ -6,10 +6,10 @@ function Rodape(){
     return(
         <div id="rodape">
         <div className="rodapeMenu">
-            <a href="#inicio">Inicio</a>
-            <a href="#Sobre">Sobre nós</a>
-            <a href="#comoFunciona">Como Funciona</a>
-            <a href="#Parceiros">Parceiros</a>
+            <a href="#inicio">Inicio</a><br />
+            <a href="#Sobre">Sobre nós</a><br />
+            <a href="#comoFunciona">Como Funciona</a><br />
+            <a href="#Parceiros">Parceiros</a><br />
         </div>
         <div className="rodapeContato">
             <a href="#" target="_blank" rel="noopener noreferrer"><BsInstagram className='icone-footer'/></a>
