@@ -1,11 +1,13 @@
 import HeaderSemLink from '../../Componentes/HeaderSemLink'
-import MenuOculto from '../../Componentes/MenuOculto'
+import MenuOcultoLogado from '../../Componentes/MenuOcultoLogado'
 import ContentDonate from '../../Componentes/DonateContent'
+import DropDown from '../../Componentes/DropDownNot'
            
 function Donate() {
     return(
         <body>
-            <MenuOculto />
+            <MenuOcultoLogado />
+            <DropDown />
             <HeaderSemLink />
             <ContentDonate />
         </body>

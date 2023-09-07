@@ -1,6 +1,6 @@
 import ExibirPost from '../../Componentes/ExibirPost'
 import HeaderSemLink from '../../Componentes/HeaderSemLink'
-import MenuOculto from '../../Componentes/MenuOculto'
+import MenuOcultoLogado from '../../Componentes/MenuOcultoLogado'
 import NavVerticalD from '../../Componentes/NavVerticalD'
 import VerPost from '../../Componentes/VerPost'
 import DropDown from '../../Componentes/DropDownNot'
@@ -8,7 +8,7 @@ import DropDown from '../../Componentes/DropDownNot'
 function Desaparecidos() {
     return(
         <>
-            <MenuOculto />
+            <MenuOcultoLogado />
             <DropDown />
             <HeaderSemLink />
             <div className='tudo'>

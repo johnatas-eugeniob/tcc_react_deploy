@@ -9,6 +9,8 @@ import Donate from "./Paginas/Donate/Donate"
 import StAjuda from "./Paginas/StAjuda/StAjuda"
 import Publi from "./Paginas/Publi/Publi"
 import Login from "./Paginas/login/login"
+import Cadastro from './Paginas/Cadastro/Cadastro'
+import Dashboard from './Paginas/Dashboard/Dash'
 
 const router = createBrowserRouter ([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter ([
   {
     path: 'login',
     element: <Login />,
+  },
+  {
+    path: 'cadastro',
+    element: <Cadastro />,
+  },
+  {
+    path: 'dashboard',
+    element: <Dashboard />,
   }
 ])
 

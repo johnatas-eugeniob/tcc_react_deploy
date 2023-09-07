@@ -20,7 +20,7 @@ function LoginForm() {
                             <input name="senha" type="password" />
                             <Link to="">Esqueceu sua senha?</Link><br />
                             <button className="botao-login">Enviar</button>
-                            <p className='register-p'>Não tem uma conta? <Link to="">Cadastre-se</Link></p>
+                            <p className='register-p'>Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link></p>
                         </form>
                     </div>
                 </div>
