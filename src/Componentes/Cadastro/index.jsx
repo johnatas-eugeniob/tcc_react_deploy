@@ -10,25 +10,44 @@ function CadastroForm() {
                         <h1>Bem vindo(a), a AC Pets Helper!</h1>
                         <p>Faça seu cadastro para acessar tudo</p>
                     </div>
-                    <div className='cadastro-form'>
-                        <form action="" method="post">
-                            <p className='input-label-cadastro'>DIGITE SEU NOME</p>
+                    <form action="" method="post" className='cadastro-form-input'>
+                        <div className='dados'>
+                            <p className='input-label-cadastro'>DIGITE SEU NOME COMPLETO</p>
                             <input name="name" type="text" />
                             <br/><br/>
                             <p className='input-label-cadastro'>DIGITE SEU EMAIL</p>
                             <input name="email" type="text" />
                             <br/><br/>
-                            <p className='input-label-cadastro'>DIGITE SEU TELEFONE</p>
-                            <input name="telefone" type="text" />
+                            <p className='input-label-cadastro'>CRIE UMA SENHA</p>
+                            <input name="senha" type="password" />
                             <br/><br/>
+                            <p className='input-label-cadastro'>CONFIRME SUA SENHA</p>
+                            <input name="senha" type="password" />
+                            <br/><br/>
+                        </div>
+                        <div className='endereco'>
                             <p className='input-label-cadastro'>DIGITE SEU CEP</p>
                             <input name="cep" type="text" />
                             <br/><br/>
-                            <p className='input-label-cadastro'>CRIE SUA SENHA</p>
-                            <input name="senha" type="password" />
+                            <p className='input-label-cadastro'>RUA</p>
+                            <input name="rua" type="text" />
+                            <br/><br/>
+                            <p className='input-label-cadastro'>BAIRRO</p>
+                            <input name="rua" type="text" />
+                            <br/><br/>
+                            <p className='input-label-cadastro'>COMPLEMENTO (Opicional)</p>
+                            <input name="rua" type="text" />
+                            <br/><br/>
+                        </div>
+                    </form>
+                    <div className='buttons'>
+                        <div className='bt-enviar'>
                             <button className="botao-cadastro">Enviar</button>
+                        </div>    
+                        <div className='bt-juri'>
                             <p className='register-p'>Já tem uma conta? <Link to="/login">Entre</Link></p>
-                        </form>
+                            <p className='register-p'>É uma Ong ou Instituição? <Link to="/login">Acesse</Link></p>
+                        </div>
                     </div>
                 </div>
             </div>

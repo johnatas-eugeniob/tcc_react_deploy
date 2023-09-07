@@ -6,20 +6,18 @@
     align-items: center;
     background-image: url(../../img/bg-login.jpg);
     position: absolute;
-    top: 80px;
+    top: 20px;
 }
 .form-cadastro{
-    width: 650px;
-    height: 650px;
+    width: 800px;
+    height: 560px;
     background: #313338;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
     position: relative;
     top: 10px;
 }
 .container-form-cadastro{
-    width: 80%;
+    width: 100%;
     height: 100%;
 }
 .cadastro-title{
@@ -39,14 +37,16 @@
     color: rgb(135, 135, 135);
     font-size: 14px;
 }
-.cadastro-form{
-    width: 100%;
-    height: 75%;
-}
 .input-label-cadastro{
     color: rgb(181, 181, 181);
 }
-.cadastro-form input{
+.cadastro-form-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+.cadastro-form-input input{
     width: 100%;
     height: 40px;
     border: none;
@@ -61,11 +61,34 @@
     text-decoration: none;
     color: #CC5F1A;
 }
+.dados{
+    width: 45%;
+}
+.endereco{
+    width: 45%;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-arround;
+    padding: 0px 15px 0px 15px;
+}
+.bt-enviar, .bt-juri{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bt-enviar, .bt-juri a{
+    text-decoration: none;
+    color: #CC5F1A;
+}
 .botao-cadastro{
     background-color: #CC5F1A;
     cursor: pointer;
     color: #fff;
-    width: 100%;
+    width: 80%;
     height: 40px;
     border: none;
     padding: 10px;
