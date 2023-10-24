@@ -1,24 +1,23 @@
 import ExibirPost from '../../Componentes/ExibirPost'
 import HeaderSemLink from '../../Componentes/HeaderSemLink'
 import MenuOcultoLogado from '../../Componentes/MenuOcultoLogado'
-import NavVerticalD from '../../Componentes/NavVerticalD'
-import VerPost from '../../Componentes/VerPost'
+import NavVerticalSt from '../../Componentes/NavVerticalSt'
 import DropDown from '../../Componentes/DropDownNot'
+import './style.css'
            
-function Desaparecidos() {
+function StAjuda() {
     return(
         <>
             <MenuOcultoLogado />
             <DropDown />
             <HeaderSemLink />
             <div className='tudo'>
-                <NavVerticalD />
+                <NavVerticalSt />
                 <div className='conteudoTudo'>
                     <ExibirPost />
-                    <VerPost />
                 </div>
             </div>
         </>
     )
 }
-export default Desaparecidos
+export default StAjuda

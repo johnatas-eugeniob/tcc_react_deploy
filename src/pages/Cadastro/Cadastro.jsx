@@ -1,13 +1,13 @@
 import HeaderLogin from "../../Componentes/HeaderLogin";
 import MenuOculto from "../../Componentes/MenuOculto";
-import CadastroForm from "../../Componentes/Cadastro";
+import Cadastrar from "../../Componentes/Cadastro";
 
 function Cadastro() {
-    return(
+    return (
         <>
             <MenuOculto />
             <HeaderLogin />
-            <CadastroForm />
+            <Cadastrar />
         </>
     )
 }

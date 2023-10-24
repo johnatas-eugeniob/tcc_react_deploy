@@ -40,7 +40,7 @@
 .input-label-cadastro{
     color: rgb(181, 181, 181);
 }
-.cadastro-form-input{
+.cadastro-form-input-div{
     width: 100%;
     display: flex;
     justify-content: space-between;
