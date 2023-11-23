@@ -23,6 +23,13 @@ function Carrossel() {
                             alt="Slider"
                             className='slide-item'
                         />
+                        <div className="carrosel-text">
+                            <div className='txt'>
+                                <h2>Bem Vindo</h2>
+                                <p>O Site que vai ajudar Você!</p>
+                            </div>
+                            
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

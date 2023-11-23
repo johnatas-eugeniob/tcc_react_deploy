@@ -109,7 +109,13 @@ export default function Cadastrar() {
                     </div>
                     {status.type === 'erro' ? <AlertDanger>{status.mensagem}</AlertDanger> : ""}
                     {status.type === 'success' ? 
-                    <AlertSuccess>{status.mensagem} <a href="https://mailtrap.io/inboxes/2435763/messages" target="_blank" rel="noopener noreferrer">Ir para o email</a></AlertSuccess> : ""}
+                    <AlertSuccess>
+                      {status.mensagem} 
+                      <a href="https://mailtrap.io/inboxes/2435763/messages" target="_blank" rel="noopener noreferrer">
+                        Ir para o email
+                      </a>
+                      </AlertSuccess> 
+                    : ""}
         
                     <form onSubmit={cadUser} method="post" className='cadastro-form-input'>
                       <div className='cadastro-form-input-div'>
