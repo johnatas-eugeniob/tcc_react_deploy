@@ -1,6 +1,6 @@
 <?php
 // Cabecalhos obrigatórios
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: *");
 
@@ -43,9 +43,7 @@ try {
     // Retornar os dados no formato JSON
     header('Content-Type: application/json');
     echo json_encode($resultArray);
-
 } catch (Exception $e) {
     // Em caso de erro, exibir mensagem de erro
     echo json_encode(array('error' => $e->getMessage()));
 }
-?>

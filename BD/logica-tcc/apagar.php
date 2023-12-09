@@ -1,7 +1,7 @@
 <?php
 
 //Cabecalhos obrigatorios
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 
 //Incluir a conexao
@@ -15,12 +15,12 @@ $query_user = "DELETE FROM user WHERE id=:id LIMIT 1";
 $delete_user = $conn->prepare($query_user);
 $delete_user->bindParam(':id', $id, PDO::PARAM_INT);
 
-if($delete_user->execute()){
+if ($delete_user->execute()) {
     $response = [
         "erro" => false,
         "mensagem" => "Usuario apagado com sucesso!"
     ];
-}else{
+} else {
     $response = [
         "erro" => true,
         "mensagem" => "Erro: Usuario não apagado com sucesso!"

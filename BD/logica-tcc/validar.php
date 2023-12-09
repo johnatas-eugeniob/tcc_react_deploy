@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: *");
 
@@ -20,9 +20,9 @@ if (isset($data->email) && isset($data->senha)) {
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($user) {     
+    if ($user) {
         if (password_verify($senha, $user['senha'])) {
-            if ($user['sit_user_id'] === 1) { 
+            if ($user['sit_user_id'] === 1) {
                 // Definição da chave secreta do token JWT
                 $secret = "ESYNZRm$8$6&PVU^gysLWakwn8HAR%@c'";
                 // Criação do token JWT
@@ -32,7 +32,7 @@ if (isset($data->email) && isset($data->senha)) {
                 ]);
                 $payload = json_encode([
                     'id' => $user['id'],
-                    'entrada' => 'Usuario'                  
+                    'entrada' => 'Usuario'
                 ]);
                 //$signature = hash_hmac("sha256", $header . "." . $payload, $secret);
                 $token = $payload;
@@ -61,10 +61,10 @@ if (isset($data->email) && isset($data->senha)) {
         ];
     }
 } else {
-    $response = ['erro' => "true",
-                'mensagem' => "Dados incompletos"
-            ];
+    $response = [
+        'erro' => "true",
+        'mensagem' => "Dados incompletos"
+    ];
 }
 http_response_code(200);
 echo json_encode($response);
-?>

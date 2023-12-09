@@ -1,6 +1,6 @@
 <?php
 //parte do react
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: *");
 
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->isHTML(true);
             $mail->Subject = 'Recuperação de Senha';
             $mail->Body = 'Olá ' . $usuario['nome'] . ',<br><br>Você solicitou a recuperação de senha. Aqui estão as instruções para redefinir sua senha.
-            Siga o link para redefinir sua senha: <a href="http://localhost:5173/trocar-senha" target="_blank" rel="noopener noreferrer">Clique aqui</a>';
+            Siga o link para redefinir sua senha: <a href="https://main--acpetshelper.netlify.app/trocar-senha" target="_blank" rel="noopener noreferrer">Clique aqui</a>';
 
             // Envia o e-mail
             $mail->send();
@@ -60,4 +60,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     echo json_encode(['success' => false, 'message' => 'Método inválido.']);
 }
-?>

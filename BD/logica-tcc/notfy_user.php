@@ -1,7 +1,7 @@
 <?php
 
 //parte do react
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: *");
 
@@ -11,7 +11,8 @@ include_once 'conexao.php';
 $lastCheckTimestamp = isset($_GET['lastCheckTimestamp']) ? $_GET['lastCheckTimestamp'] : 0;
 
 // Função para obter novos posts desde a última verificação
-function getNewPosts($conn, $lastCheckTimestamp) {
+function getNewPosts($conn, $lastCheckTimestamp)
+{
     $query = "SELECT * FROM posts WHERE creation_date > FROM_UNIXTIME($lastCheckTimestamp)";
     $result = $conn->query($query);
 

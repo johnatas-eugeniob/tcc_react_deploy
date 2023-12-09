@@ -25,23 +25,19 @@ if (!empty($tokenConfirmacao)) {
 
         if ($up_usuario->execute()) {
             $_SESSION['mensagem'] = "<div>E-mail confirmado.</div>";
-            header("Location: http://localhost:5173/login-ong");
+            header("Location: https://main--acpetshelper.netlify.app/login-ong");
             exit;
         } else {
             $_SESSION['mensagem'] = "<div>Erro: E-mail não confirmado.</div>";
-            header("Location: http://localhost:5173/cadastrar-ong");
+            header("Location: https://main--acpetshelper.netlify.app/cadastrar-ong");
             exit;
         }
-
     } else {
         $_SESSION['mensagem'] = "<div>Erro: Endereço inválido.</div>";
-        header("Location: http://localhost:5173/cadastrar-ong");
+        header("Location: https://main--acpetshelper.netlify.app/cadastrar-ong");
         exit;
     }
-
 } else {
     $_SESSION['mensagem'] = "<div>Erro: Endereço inválido.</div>";
-    header("Location: http://localhost:5173/cadastrar-ong");
+    header("Location: https://main--acpetshelper.netlify.app/cadastrar-ong");
 }
-
-?>

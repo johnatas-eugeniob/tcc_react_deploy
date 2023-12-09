@@ -3,10 +3,11 @@
 use PHPMailer\PHPMailer\PHPMailer;
 //use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+
 require 'lib/vendor/autoload.php';
 
 //parte do react
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: *");
 
@@ -78,16 +79,15 @@ if ($dados) {
 
                 //Recipients
                 $mail->setFrom('acpetshelper@gmail.com', 'AC Pets Hleper'); //quem está enviando
-                $mail->addAddress( $dados['user']['email'], $dados['user']['nome']);//quem receberá
-                $mail->isHTML(true);//Set email format to HTML
+                $mail->addAddress($dados['user']['email'], $dados['user']['nome']); //quem receberá
+                $mail->isHTML(true); //Set email format to HTML
                 $mail->Subject = 'Confirma o e-mail';
-                $mail->Body    = "Prezado(a) " . $dados['user']['nome'] . ".<br><br>Agradecemos a sua solicitação de cadastramento em nosso site!<br><br>Para que possamos liberar o seu cadastro em nosso sistema, solicitamos a confirmação do e-mail clicanco no link abaixo: <br><br> <a href='http://localhost/logica-tcc/confirmar-email-ong.php?tokenConfirmacao=$tokenConfirmacao'>Clique aqui</a><br><br>Esta mensagem foi enviada a você pela empresa AC Pets Helper.<br>Você está recebendo porque está cadastrado no banco de dados da empresa AC Pets Helper. Nenhum e-mail enviado pela empresa AC Pets Helper tem arquivos anexados ou solicita o preenchimento de senhas e informações cadastrais.<br><br>" ;
+                $mail->Body    = "Prezado(a) " . $dados['user']['nome'] . ".<br><br>Agradecemos a sua solicitação de cadastramento em nosso site!<br><br>Para que possamos liberar o seu cadastro em nosso sistema, solicitamos a confirmação do e-mail clicanco no link abaixo: <br><br> <a href='http://localhost/logica-tcc/confirmar-email-ong.php?tokenConfirmacao=$tokenConfirmacao'>Clique aqui</a><br><br>Esta mensagem foi enviada a você pela empresa AC Pets Helper.<br>Você está recebendo porque está cadastrado no banco de dados da empresa AC Pets Helper. Nenhum e-mail enviado pela empresa AC Pets Helper tem arquivos anexados ou solicita o preenchimento de senhas e informações cadastrais.<br><br>";
                 $mail->AltBody = "Prezado(a) " . $dados['user']['nome'] . ".\n\nAgradecemos a sua solicitação de cadastramento em nosso site!\n\nPara que possamos liberar o seu cadastro em nosso sistema, solicitamos a confirmação do e-mail clicanco no link abaixo: \n\n http://localhost/logica-tcc/confirmar-email-ong.php?tokenConfirmacao=$tokenConfirmacao \n\nEsta mensagem foi enviada a você pela empresa AC Pets Helper.\nVocê está recebendo porque está cadastrado no banco de dados da empresa AC Pets Helper. Nenhum e-mail enviado pela empresa AC Pets Helper tem arquivos anexados ou solicita o preenchimento de senhas e informações cadastrais.\n\n";
 
                 $mail->send();
 
                 $response = ['erro' => false, 'mensagem' => "Usuário cadastrado com sucesso. Necessário acessar a caixa de e-mail para confimar o e-mail!"];
-
             } catch (Exception $e) {
                 //$retorna = ['erro' => true, 'mensagem' => "<div class='alert alert-danger' role='alert'>Erro: Usuário não cadastrado com sucesso!</div>"];
                 $response = ['erro' => true, 'mensagem' => "Erro: Usuário não cadastrado com sucesso."];
@@ -108,4 +108,3 @@ if ($dados) {
 
 http_response_code(200);
 echo json_encode($response);
-?>

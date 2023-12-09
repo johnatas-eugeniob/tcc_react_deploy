@@ -1,7 +1,7 @@
 <?php
 
 //Cabecalhos obrigatorios
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 
 //Incluir a conexao
@@ -11,8 +11,8 @@ $query_user = "SELECT id, nome, email, senha, telefone, cep, rua, bairro, sit_us
 $result_user = $conn->prepare($query_user);
 $result_user->execute();
 
-if(($result_user) AND ($result_user->rowCount() != 0)){
-    while($row_user = $result_user->fetch(PDO::FETCH_ASSOC)){
+if (($result_user) and ($result_user->rowCount() != 0)) {
+    while ($row_user = $result_user->fetch(PDO::FETCH_ASSOC)) {
         extract($row_user);
 
         $lista_user["records"][$id] = [

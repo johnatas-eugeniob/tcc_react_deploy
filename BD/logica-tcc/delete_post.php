@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: *");
 
@@ -34,9 +34,7 @@ try {
         // Se ocorrer um erro durante a exclusão, retornar uma mensagem de erro
         echo json_encode(array('success' => false, 'error' => 'Erro ao excluir o post.'));
     }
-
 } catch (Exception $e) {
     // Em caso de erro, retornar uma mensagem de erro
     echo json_encode(array('success' => false, 'error' => $e->getMessage()));
 }
-?>

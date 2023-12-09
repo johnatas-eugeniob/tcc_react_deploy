@@ -1,6 +1,6 @@
 <?php
 //parte do react
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://main--acpetshelper.netlify.app");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: *");
 
@@ -43,4 +43,3 @@ $conn->close();
 
 // Responder com sucesso
 echo json_encode(['mensagem' => 'Dados atualizados com sucesso']);
-?>
