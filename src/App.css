@@ -8,16 +8,26 @@
     /*font-family: 'Montserrat', sans-serif;*/
 }
 body{
-    background-image: linear-gradient(to right, #5de0e6, #004aad);
+    /*background-image: linear-gradient(to right, #5de0e6, #004aad);*/
+    background-color: #EFECFF;
     height: 100vh;
 }
 .tudo{
     width: 100%;
-    /*height: 100vh;*/
+    height: 1000%;
     background-color: #EFECFF;
     display: flex;
     justify-content: space-arround;
     padding: 20px 10px 10px 10px;
+    position: relative;
+    top: 70px;
+}
+.tudo-perfil{
+    width: 100%;
+    background-color: #EFECFF;
+    display: flex;
+    justify-content: center;
+    padding: 25px 10px 10px 10px;
     position: relative;
     top: 70px;
 }

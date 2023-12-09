@@ -9,8 +9,7 @@ function Seletor() {
                     <div className="textSeletor">
                         <Link to="/desaparecidos" className='textSeletorLink'>
                             <h1>Desaparecidos</h1>
-                            <p>Lorem ipsum dolor sit amet. Et natus necessitatibus aut eligendi eveniet
-                                At laborum enim quo obcaecati amet eos nihil consectetur At sint earum. </p>
+                            <p>Página dedicada a animais desaparecidos. clique aqui para descobrir mais. </p>
                             <button>Acessar</button></Link>
                     </div>
                 </div>
@@ -20,8 +19,7 @@ function Seletor() {
                     <div className="textSeletor">
                         <Link to='/stajuda' className='textSeletorLink'>
                             <h1>Precisando de Ajuda</h1>
-                            <p>Lorem ipsum dolor sit amet. Et natus necessitatibus aut eligendi eveniet
-                                At laborum enim quo obcaecati amet eos nihil consectetur At sint earum. </p>
+                            <p>Precisa de ajuda? clique aqui para fazer um post e receber assistencia de outros usuários. </p>
                             <button>Acessar</button></Link>
                     </div><a name="comoFunciona"></a>
                 </div>

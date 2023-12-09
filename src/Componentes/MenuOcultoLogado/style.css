@@ -43,3 +43,22 @@
 .btnFechar:hover{
     color: #ff0000;
 }
+.menuOculto button{
+    width: 93%;
+    text-align: center;
+    padding: 20px 8px 20px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    background-color: #a1a0a0;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 10px 10px 10px;
+    cursor: pointer;
+}
+.menuOculto button:hover{
+    color: #ff0000;
+}

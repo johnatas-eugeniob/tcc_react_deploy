@@ -1,0 +1,39 @@
+.container-delete{
+    width: 350px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #000;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    left: 25%;
+    padding: 20px 20px 20px 20px;
+}
+.delete-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+.button-select{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+.yes{
+    width: 75px;
+    height: 45px;
+    background-color: green;
+    color: #fff;
+    border: 3px #f8f8f8c4 solid;
+    border-radius: 5px;
+}
+.no{
+    width: 75px;
+    height: 45px;
+    background-color: red;
+    color: #fff;
+    border: 3px #f8f8f8c4 solid;
+    border-radius: 5px;
+}

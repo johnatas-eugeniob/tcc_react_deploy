@@ -1,0 +1,104 @@
+.container-ong{
+    width: 100%;
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px #808080;
+    border-right: #808080 1px solid;
+    border-bottom: #808080 1px solid;
+}
+.window-between-ong{
+    width: 100%;
+}
+.window-between-content-ong{
+    width: 100%;
+    display: flex;
+}
+.container-ong a{
+    text-decoration: none;
+}
+.container-title-ong{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-update-ong{
+    width: 50%;
+    height: 200px;
+    padding: 0px 10px 0px 10px;
+}
+.content-update-input-ong{
+    width: 50%;
+    height: 100px;
+    padding: 0px 10px 0px 10px;
+}
+.content-update-input-ong-buttons{
+    width: 50%;
+    height: 100px;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+}
+.content-update-display-ong{
+    height: 80%;
+}
+.content-update-display-ong textarea{
+    padding: 5px;
+}
+.modify-name-ong input{
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid;
+    padding: 5px;
+}
+.content-update-ong:last-child{
+    height: 50px;
+}
+
+.content-desc-ong{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.content-desc-img-ong{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.img-update-ong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil-img-ong{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.content-desc-ong button{
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.content-desc-delete-ong button{
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+}

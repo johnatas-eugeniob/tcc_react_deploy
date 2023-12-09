@@ -3,19 +3,34 @@
     height: 300px;
     position: relative;
     top: 70px;
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 50px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    padding-top: 50px;
+    background: #EBB000;
 }
-.rodapeMenu{
-    height: 50%;
+.container-tudo{
     width: 100%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
-    padding-left: 25%;
-    padding-right: 25%;
+}
+.make-dev{
+    width: 100%;
+    background-color: #8B5B8F;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.container-rodapeMenu{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodapeMenu{
+    position: relative;
+    left: 0%;
+    justify-content: center;
 }
 .rodapeMenu a{
     align-items: center;
@@ -25,23 +40,34 @@
     color: #fff;
     position: relative;
 }
+.rodapeMenu h3{
+    color: #2d0231;
+}
 .rodapeMenu a:hover{
     color: #CC5F1A;
 }
 .rodapeContato{
-    height: 50%;
+    background-color: #8B5B8F;
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding-left: 40%;
     padding-right: 40%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top: 5px;
+}
+.container-menu{
+    margin-top: -10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 .icone-footer{
-    font-size: 50px;
+    font-size: 35px;
     transition: 0.5s;
-}
-.icone-footer:hover{
-    font-size: 54px;
 }
 @media(max-width: 780px){
     .rodapeMenu{

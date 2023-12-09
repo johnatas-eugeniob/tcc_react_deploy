@@ -31,11 +31,10 @@ if (isset($data->email) && isset($data->senha)) {
                     "typ" => "JWT"
                 ]);
                 $payload = json_encode([
-                    "id" => $user['id'],
-                    "username" => $user['nome'],
-                    "email" => $user['email']                    
+                    'id' => $user['id'],
+                    'entrada' => 'Usuario'                  
                 ]);
-                $signature = hash_hmac("sha256", $header . "." . $payload, $secret);
+                //$signature = hash_hmac("sha256", $header . "." . $payload, $secret);
                 $token = $payload;
 
                 $response = [

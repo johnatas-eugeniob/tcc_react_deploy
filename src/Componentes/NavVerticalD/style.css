@@ -18,6 +18,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+button{
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
 .iconeNavVertical:hover{
     background-color: #e8e8e8;
     border-radius: 10px;

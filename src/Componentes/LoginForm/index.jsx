@@ -3,8 +3,9 @@ import { useState } from 'react';
 import { AlertSuccess, AlertDanger, AlertWaring } from './styles';
 import { Link, useNavigate } from 'react-router-dom';
 
-export default function Login() {
+export default function LoginUser() {
     const navigate = useNavigate();
+    
     const [formData, setFormData] = useState({
       email: '',
       senha: ''
@@ -95,9 +96,10 @@ export default function Login() {
                               onChange={handleInputChange} 
                           />
 
-                          <Link to="">Esqueceu sua senha?</Link><br />
+                          <Link to="/esqueceu-senha">Esqueceu sua senha?</Link><br />
                           <button className="botao-login" type="submit">Enviar</button>
                           <p className='register-p'>Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link></p>
+                          <p className='register-p'>Deseja alterar a entrada? <Link to="/seletor-login">Acesse</Link></p>
                       </form>
                   </div>
               </div>

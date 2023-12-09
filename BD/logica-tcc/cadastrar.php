@@ -86,7 +86,7 @@ if ($dados) {
 
                 $mail->send();
 
-                $response = ['erro' => false, 'mensagem' => "Usuário cadastrado com sucesso. Necessário acessar a caixa de e-mail para confimar o e-mail!"];
+                $response = ['erro' => false, 'mensagem' => "Usuário cadastrado com sucesso! Acesse a caixa de e-mail para confimar o e-mail!"];
 
             } catch (Exception $e) {
                 //$retorna = ['erro' => true, 'mensagem' => "<div class='alert alert-danger' role='alert'>Erro: Usuário não cadastrado com sucesso!</div>"];

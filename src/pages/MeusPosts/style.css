@@ -1,0 +1,87 @@
+.container-conteudoTudo-meu-post{
+    position: relative;
+    left: 35%;
+    width: 40%;
+}
+.button-update{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 100%;
+    top: 40%;
+    font-size: 22px;
+    color: #808080;
+}
+.button-content{
+    display: flex;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.conteudoTudo-meu-post{
+    margin-bottom: 20px;
+    width: 90%;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.conteudoDesaparecidos-meu-post{
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 0px #808080;
+    border-right: #808080 1px solid;
+    border-bottom: #808080 1px solid;
+}
+.janelaPerfil-meu-post{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.imgPerfil-meu-post img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.descPost-meu-post{
+    width: 100%;
+    height: 100%;
+}
+.janelaPerfilDescricao-meu-post{
+    position: relative;
+    width: 500px;
+    height: 150px;
+    padding: 8px 8px 8px 8px;
+    overflow: auto;
+}
+.hrDescricaoImagem-meu-post hr{
+    margin-top: 5px;
+}
+.curtidas-meu-post{
+    width: 50%;
+    height: 30px;
+    position: relative;
+    left: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+.imagemCurtida-meu-post{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.imagemCurtida-meu-post:hover{
+    color: #ff000f;
+    text-decoration: underline;
+}
+.imagemCurtida-meu-post img{
+    margin-right: 5px;
+}
+.iconeCurtida-meu-post{
+    font-size: 28px;
+}

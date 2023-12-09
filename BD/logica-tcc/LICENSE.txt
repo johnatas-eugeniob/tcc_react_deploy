@@ -18,3 +18,60 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+<?php
+//parte do react
+header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Headers: *");
+
+// Inclua o arquivo de conexão
+include_once 'conexao.php';
+
+// Verificar se há dados no POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Capturar os dados do POST
+    $user_id = 1; // Substitua pelo ID do usuário, dependendo de como você autentica seus usuários
+    $caption = $_POST['caption'];
+
+    // Verificar se foi enviado um arquivo de imagem
+    if (isset($_FILES['image']) && $_FILES['image']['error'] == UPLOAD_ERR_OK) {
+        $image_path = 'https://acmanangement.000webhostapp.com/repo_img' . basename($_FILES['image']['name']);
+
+        // Mover a imagem para o diretório desejado
+        move_uploaded_file($_FILES['image']['tmp_name'], $image_path);
+    } else {
+        // Lida com o caso em que nenhuma imagem foi enviada
+        $image_path = null;
+    }
+
+    // Preparar a declaração SQL para a inserção
+    $sql = "INSERT INTO posts (user_id, caption, image_path) VALUES (?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+
+    // Verificar se a preparação foi bem-sucedida
+    if ($stmt === false) {
+        echo json_encode(['success' => false, 'message' => 'Erro na preparação da declaração SQL.']);
+        exit();
+    }
+
+    // Associar os parâmetros
+    $stmt->bind_param("iss", $user_id, $caption, $image_path);
+
+    // Executar a declaração
+    if ($stmt->execute()) {
+        echo json_encode(['success' => true, 'message' => 'Publicação inserida com sucesso.']);
+    } else {
+        echo json_encode(['success' => false, 'message' => 'Erro ao inserir a publicação no banco de dados.']);
+    }
+
+    // Esse trecho fecha a declaração
+    $stmt->close();
+} else {
+    echo json_encode(['success' => false, 'message' => 'Requisição inválida.']);
+}
+
+// Esse trecho fecha a conexão
+?>

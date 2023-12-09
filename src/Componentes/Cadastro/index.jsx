@@ -1,6 +1,6 @@
 import './style.css'
 import { useState } from 'react';
-import { AlertSuccess, AlertDanger} from './styles';
+import { AlertSuccess, AlertDanger} from './styles.jsx';
 import { Link } from 'react-router-dom';
 
 export default function Cadastrar() {
@@ -110,10 +110,11 @@ export default function Cadastrar() {
                     {status.type === 'erro' ? <AlertDanger>{status.mensagem}</AlertDanger> : ""}
                     {status.type === 'success' ? 
                     <AlertSuccess>
-                      {status.mensagem} 
-                      <a href="https://mailtrap.io/inboxes/2435763/messages" target="_blank" rel="noopener noreferrer">
-                        Ir para o email
-                      </a>
+                      {status.mensagem} <a href="https://mailtrap.io/inboxes/2435763/messages" 
+                                          target="_blank" 
+                                          rel="noopener noreferrer">
+                                            Ir para o email
+                                        </a>
                       </AlertSuccess> 
                     : ""}
         
@@ -179,7 +180,7 @@ export default function Cadastrar() {
                         <div className='buttons'>
                             <div className='bt-juri'>
                                 <p className='register-p'>Já tem uma conta? <Link to="/login">Entre</Link></p>
-                                <p className='register-p'>É uma Ong ou Instituição? <Link to="/login">Acesse</Link></p>
+                                <p className='register-p'>Deseja alterar a entrada?<Link to="/seletor-login">Acesse</Link></p>
                             </div>
                             <button className="botao-cadastro" type="submit">Enviar</button>
                         </div>

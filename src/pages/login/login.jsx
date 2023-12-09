@@ -1,15 +1,15 @@
-import HeaderLogin from "../../Componentes/HeaderLogin"
+import HeaderForms from "../../Componentes/HeaderForms";
 import MenuOculto from "../../Componentes/MenuOculto";
-import LoginForm from "../../Componentes/LoginForm";
+import LoginUser from "../../Componentes/LoginForm";
 //import styled from 'styled-components';
 
 function Login() {
-    
-    return(
+
+    return (
         <>
             <MenuOculto />
-            <HeaderLogin />
-            <LoginForm />
+            <HeaderForms />
+            <LoginUser />
         </>
     )
 }

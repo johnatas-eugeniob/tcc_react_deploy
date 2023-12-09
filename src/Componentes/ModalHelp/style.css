@@ -1,0 +1,38 @@
+.conteudo-tudo-help{
+    width: 40%;
+    position: fixed;
+    left: 30%;
+    top: 12%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
+    padding: 0px 15px 15px 15px;
+}
+.conteudo-titulo-help{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.conteudo-nome-help{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.conteudo-nome-help img{
+    width: 10%;
+    height: 55%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text-desc-help{
+    width: 100%;
+    height: 100px;
+}
+.desc{
+    margin-bottom: 15px;
+}

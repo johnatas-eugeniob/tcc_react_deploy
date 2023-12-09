@@ -1,16 +1,71 @@
-.conteudoTudo{
-    height: 800px;
-    display: flex;
-    justify-content: space-between;
+.container-conteudoTudo-st{
     position: relative;
-    left: 30%;
-    background-color: #fff;
-    border-top: #808080 solid 1px;
-    border-right: #808080 solid 1px;
-    border-bottom: #808080 solid 1px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px 0 rgba( 31, 38, 135, 0.37 );
+    left: 35%;
+    width: 35%;
 }
-#iconePageStAjuda{
-    color: #CC5F1A;
+.conteudoTudo-st{
+    margin-bottom: 20px;
+    width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.conteudoDesaparecidos-st{
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 0px #808080;
+    border-right: #808080 1px solid;
+    border-bottom: #808080 1px solid;
+}
+.janelaPerfil-st{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.imgPerfil-st img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.descPost-st{
+    width: 100%;
+    height: 100%;
+}
+.janelaPerfilDescricao-st{
+    position: relative;
+    width: 500px;
+    height: 150px;
+    padding: 8px 8px 8px 8px;
+    overflow: auto;
+}
+.hrDescricaoImagem-st hr{
+    margin-top: 5px;
+}
+.curtidas-st{
+    width: 50%;
+    height: 30px;
+    position: relative;
+    left: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+.imagemCurtida-st{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.imagemCurtida-st:hover{
+    color: #ff000f;
+    text-decoration: underline;
+}
+.imagemCurtida-st img{
+    margin-right: 5px;
+}
+.iconeCurtida-st{
+    font-size: 28px;
 }

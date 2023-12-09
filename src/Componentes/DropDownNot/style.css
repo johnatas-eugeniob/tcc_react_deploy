@@ -1,14 +1,14 @@
 .dropDown{
     height: 100%;
-    width: 0px;
+    width: 500px;
     position: fixed;
-    top: 10%;
-    right: 20%;
+    top: 15%;
+    right: 5%;
     overflow-x:hidden;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;
-    background:#EFECFF;;
+    background-color:#EFECFF;;
     box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 50px );
     -webkit-backdrop-filter: blur( 13.5px );
